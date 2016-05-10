@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{47CD0A50-00AF-4DAB-BC4D-16E099B64A73}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TotemAppIos</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TotemAppIos</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="MaterialControls">
+      <HintPath>libs\MaterialControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text.XamarinIOS">
+      <HintPath>..\Components\servicestacktext-3.9.61.3\lib\ios-unified\ServiceStack.Text.XamarinIOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-736%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-667h%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Splash IPAD.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-40%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-40%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-60%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-60%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-76%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-83.5%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-Small%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-Small%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-120.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcon.appiconset\Icon-152.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Resources\SGV\TotemApp\Components\ChecklistHeaderFooter.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Eigenschappen\EigenschappenTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Profielen\ProfielenTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Totems\TotemsTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\Checklist\ChecklistViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\Eigenschappen\EigenschappenViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\Profielen\ProfielenViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\TotemDetail\TotemDetailViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\Totems\TotemListViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\Main\MainViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\ProfielTotems\ProfielTotemsTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\ProfielTotems\ProfielTotemsViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\TotemsResult\TotemsResultViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Checklist\HeadTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Checklist\IndentTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Checklist\NormalTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Components\Checklist\BaseChecklistTableViewCell.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\BaseViewController.xib" />
+    <InterfaceDefinition Include="SGV\TotemApp\Controllers\TinderEigenschappen\TinderEigenschappenViewController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="SGV\BemCheckBox\BemCheckBox.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="SGV\TotemApp\IosUtils.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\ChecklistTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Components\Eigenschappen\EigenschappenTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Eigenschappen\EigenschappenTableViewCell.designer.cs">
+      <DependentUpon>EigenschappenTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Eigenschappen\EigenschappenTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Components\Profielen\ProfielenTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Profielen\ProfielenTableViewCell.designer.cs">
+      <DependentUpon>ProfielenTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Profielen\ProfielenTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Components\Totems\TotemsTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Totems\TotemsTableViewCell.designer.cs">
+      <DependentUpon>TotemsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Totems\TotemsTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\Checklist\ChecklistViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\Checklist\ChecklistViewController.designer.cs">
+      <DependentUpon>ChecklistViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\Eigenschappen\EigenschappenViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\Eigenschappen\EigenschappenViewController.designer.cs">
+      <DependentUpon>EigenschappenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\Profielen\ProfielenViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\Profielen\ProfielenViewController.designer.cs">
+      <DependentUpon>ProfielenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\TotemDetail\TotemDetailViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\TotemDetail\TotemDetailViewController.designer.cs">
+      <DependentUpon>TotemDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\Totems\TotemListViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\Totems\TotemListViewController.designer.cs">
+      <DependentUpon>TotemListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\Main\MainViewController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\Main\MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\ProfielTotems\ProfielTotemsTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Components\ProfielTotems\ProfielTotemsTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\ProfielTotems\ProfielTotemsTableViewCell.designer.cs">
+      <DependentUpon>ProfielTotemsTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\ProfielTotems\ProfielTotemsViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\ProfielTotems\ProfielTotemsViewController.designer.cs">
+      <DependentUpon>ProfielTotemsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\TotemsResult\TotemsResultViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\TotemsResult\TotemsResultViewController.designer.cs">
+      <DependentUpon>TotemsResultViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\TotemsResult\TotemsResultTableViewSource.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\HeadTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\HeadTableViewCell.designer.cs">
+      <DependentUpon>HeadTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Checklist\IndentTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\IndentTableViewCell.designer.cs">
+      <DependentUpon>IndentTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Checklist\NormalTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\NormalTableViewCell.designer.cs">
+      <DependentUpon>NormalTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Components\Checklist\BaseChecklistTableViewCell.cs" />
+    <Compile Include="SGV\TotemApp\Components\Checklist\BaseChecklistTableViewCell.designer.cs">
+      <DependentUpon>BaseChecklistTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\BemCheckBox\BemAnimationManager.cs" />
+    <Compile Include="SGV\BemCheckBox\BemAnimationType.cs" />
+    <Compile Include="SGV\BemCheckBox\BemBoxType.cs" />
+    <Compile Include="SGV\BemCheckBox\BemCheckBox.cs" />
+    <Compile Include="SGV\BemCheckBox\BemCheckBoxDelegate.cs" />
+    <Compile Include="SGV\BemCheckBox\BemPathManager.cs" />
+    <Compile Include="SGV\TotemApp\BaseViewController.cs" />
+    <Compile Include="SGV\TotemApp\BaseViewController.designer.cs">
+      <DependentUpon>BaseViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\TotemApp\Controllers\TinderEigenschappen\TinderEigenschappenViewController.cs" />
+    <Compile Include="SGV\TotemApp\Controllers\TinderEigenschappen\TinderEigenschappenViewController.designer.cs">
+      <DependentUpon>TinderEigenschappenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SGV\CRSAlert\CRSAlertView.cs" />
+  </ItemGroup>
+  <Import Project="..\TotemAppCore\TotemAppCore.projitems" Label="Shared" Condition="Exists('..\TotemAppCore\TotemAppCore.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="SGV\" />
+    <Folder Include="SGV\TotemApp\" />
+    <Folder Include="SGV\TotemApp\Controllers\" />
+    <Folder Include="SGV\TotemApp\Components\" />
+    <Folder Include="SGV\TotemApp\Components\Checklist\" />
+    <Folder Include="SGV\TotemApp\Components\Eigenschappen\" />
+    <Folder Include="SGV\TotemApp\Components\Totems\" />
+    <Folder Include="SGV\TotemApp\Components\Profielen\" />
+    <Folder Include="SGV\TotemApp\Components\ProfielTotems\" />
+    <Folder Include="SGV\TotemApp\Controllers\Checklist\" />
+    <Folder Include="SGV\TotemApp\Controllers\Eigenschappen\" />
+    <Folder Include="SGV\TotemApp\Controllers\Totems\" />
+    <Folder Include="SGV\TotemApp\Controllers\Profielen\" />
+    <Folder Include="SGV\TotemApp\Controllers\ProfielTotems\" />
+    <Folder Include="SGV\TotemApp\Controllers\TotemDetail\" />
+    <Folder Include="SGV\TotemApp\Controllers\Main\" />
+    <Folder Include="SGV\TotemApp\Controllers\TotemsResult\" />
+    <Folder Include="SGV\TotemApp\Components\TotemsResult\" />
+    <Folder Include="SGV\TotemApp\Controllers\TinderEigenschappen\" />
+    <Folder Include="SGV\CRSAlert\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\TotemAppCore\SharedAssets\totems.sqlite">
+      <Link>SharedAssets\totems.sqlite</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="SharedAssets\add_white.png" />
+    <BundleResource Include="SharedAssets\arrow_back_white.png" />
+    <BundleResource Include="SharedAssets\arrow_forward_white.png" />
+    <BundleResource Include="SharedAssets\close_white.png" />
+    <BundleResource Include="SharedAssets\delete_white.png" />
+    <BundleResource Include="SharedAssets\more_vert_white.png" />
+    <BundleResource Include="SharedAssets\search_white.png" />
+    <BundleResource Include="..\TotemAppCore\SharedAssets\fonts\DINPro-Light.ttf">
+      <Link>Resources\DINPro-Light.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\TotemAppCore\SharedAssets\fonts\Verveine W01 Regular.ttf">
+      <Link>Resources\Verveine W01 Regular.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\TotemAppCore\SharedAssets\fonts\sketch_block_light.ttf">
+      <Link>Resources\sketch_block_light.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\TotemAppCore\SharedAssets\fonts\DINPro-Regular_13937.ttf">
+      <Link>Resources\DINPro-Regular_13937.ttf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="SharedAssets\Berg.png" />
+    <BundleResource Include="SharedAssets\Lamp.png" />
+    <BundleResource Include="SharedAssets\Lijn_bold.png" />
+    <BundleResource Include="SharedAssets\Totem.png" />
+    <BundleResource Include="SharedAssets\checklist.xml" />
+    <BundleResource Include="Resources\DIN-LightItalic.ttf" />
+    <BundleResource Include="Resources\DINPro-Bold.ttf" />
+    <BundleResource Include="SharedAssets\lijn_trans.png" />
+    <BundleResource Include="SharedAssets\Splash.png" />
+    <BundleResource Include="SharedAssets\visibility_off_white.png" />
+    <BundleResource Include="SharedAssets\visibility_white.png" />
+    <BundleResource Include="SharedAssets\rsz_black_circle.png" />
+    <BundleResource Include="SharedAssets\rsz_white_circle.png" />
+    <BundleResource Include="SharedAssets\info_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="servicestacktext">
+      <Version>3.9.61.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>
